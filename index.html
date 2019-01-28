@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+         <script type="text/javascript" src="js/script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta id="description" content="Training Page"/>
+        <meta id="keywords" content="trials,website,page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" href="css/fontawesome.css"/>
+        <link href="main.css" rel="stylesheet"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <style type="text/css">
+            ul#ulmenu {list-style-type: none; display: block; margin:0;padding: 0;margin-left: 10px; }
+        </style>
+ 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <title>Home Page</title>
+
+    </head> 
+    <body>
+            <div id="head">
+                <div id="headcontainer">
+                    <div class="header">
+                    <span style="color: #8d8d8d">    
+                        Hi! My Name Is Example. Welcome to my Website..
+                    </span>
+                    </div>    
+                <div class="soctabmain" >    
+
+                        <a href="#"><img alt="social" src='img/rss.jpg'/></a>
+                        <a href="#"><img alt="social" src='img/fbook.jpg'/></a>
+                        <a href="#"><img alt="social" src='img/twitter.jpg'/></a>
+                        <a href="#"><img alt="social" src='img/gplus.jpg'/></a>
+                        <a href="#"><img alt="social" src='img/flickr.jpg'/></a>
+                        <a href="#"><img alt="social" src='img/linkedin.jpg'/></a>
+
+                </div>
+                </div>
+            </div>
+        
+        <div id="logo">
+                <img src="img/logo.jpg" alt="logo" width="200" height="80"/>       
+            </div>
+            <div id="menu">
+                <div id="menu-bar">
+                    <ul id="ulmenu">
+                      <li ><a href="#" style="color: #4a8b86">HOME</a></li>
+                      <li ><a href="about.html">ABOUT US</a></li>
+                      <li ><a href="work.html">OUR WORKS</a></li>
+                      <li ><a href="service.html">SERVICES</a></li>
+                      <li ><a href="journal.html">JOURNAL</a></li>
+                      <li ><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div id="post">
+            <h1 class="posthead" style="font-size: 13px"><span>POPULAR POSTS</span></h1>
+            <div id="postrow">
+                <div class="row1">    
+                <a href="#"><img class="image" alt="leftbar" style="float: left" src="img/sol1.jpg"/></a>
+                    <p>Magna Ullamcorper Dolor Fermentum</p>
+                </div>
+                <div class="row2">
+                    <a href="#"><img class="image" alt="leftbar" style="float: left" src="img/sol2.jpg"/></a>
+                    <p>Commodo Fusce Dolor Adipiscing</p>
+                </div>
+                <div class="row3">
+                    <a href="#"><img class="image" alt="leftbar" style="float: left" src="img/sol3.jpg"/></a>
+                    <p>Quam Inceptos Lorem Tortor Risus</p>   
+                </div>
+            </div>    
+        </div>
+
+        <div id="banner">
+        <div class="container">
+          <div class="slider-outer">
+            <button class="prev">Prev</button>
+            <div class="slider-inner" >
+              <img src="img/banner.jpg" alt="banner1" class="active"/>
+              <img src="img/alt2.jpg" alt="banner2"/>
+              <img src="img/banner3.jpg" alt="banner3"/>
+              
+            </div>
+            <button class="next">Next</button>
+          </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.next').on('click', function(){
+                var currentImg = $('.active');
+                var nextImg = currentImg.next();
+
+                if(nextImg.length){
+                  currentImg.removeClass('active').css('z-index', -10);
+                  nextImg.addClass('active').css('z-index', 10);
+                }
+              });
+
+              $('.prev').on('click', function(){
+                var currentImg = $('.active');
+                var prevImg = currentImg.prev();
+
+                if(prevImg.length){
+                  currentImg.removeClass('active').css('z-index', -10);
+                  prevImg.addClass('active').css('z-index', 10);
+                }
+              });
+            });
+
+        </script>
+        <div id="work">
+            <div class="workheader">
+                <h1 class="workhead" style="font-size: 15px" ><span>RECENT WORKS</span></h1>
+            </div>
+            <div class="workscontent">
+                <div class="row">
+                    <div class="column">
+                        <img class="workimage" src="img/alt1.jpg" alt="work1" height="175" width="270"/>
+                        <h2 class="col-head" style="font-size: 13px">VESTIBULUM EUISMOD COMMODO AENEAN</h2>
+                        <p class="par" style="font-size: 12px" >Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    </div>
+                    <div class="column2">
+                        <img class="workimage" src="img/alt2.jpg" alt="work2" height="110" width="190"/>
+                        <h3 class="col-head" style="font-size: 13px">BIBENDUM FRINGILLA</h3>
+                        <p class="par" style="font-size: 12px">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Vestibulum id ligula.</p>
+                    </div>
+                    <div class="column3">
+                        <img class="workimage" src="img/alt3.jpg" alt="work3" height="110" width="190"/>
+                        <h4 class="col-head" style="font-size: 13px">SEM FUSCE ULTRICIES</h4>
+                        <p class="par" style="font-size: 12px">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh, ut fermentum massa justo sit amet risus.</p>
+                    </div>
+
+                </div>
+            </div>
+                <div id= "workbutton">
+                    <button>&#8249;</button>
+                     <button>&#8250;</button>
+                </div>    
+        </div>
+      
+        <div id="footer">  
+                <p style="color: #7d7d7d">© 2011 Example. All Rights Reserved.</p>    
+                <button class="fbutton">&#8593;</button>
+            
+        </div>
+    </body>
+</html>
+
